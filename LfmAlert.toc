@@ -1,0 +1,12 @@
+## Interface: 11200
+## Title: LFM Alert
+## Author: Nightwhistle
+## Version: 1.0
+## Notes: Alerts when LFM messages in chat match predefined keywords.
+## Description: This addon monitors chat channels for "LFM" (Looking For More) messages and highlights them if they contain user-defined keywords.
+## Commands:
+##   - /lfm add <keyword>    -> Adds a keyword to track.
+##   - /lfm remove <keyword> -> Removes a keyword from tracking.
+##   - /lfm list             -> Lists all saved keywords.
+##   - /lfm clear            -> Clears all tracked keywords.
+LFMAlert.lua
