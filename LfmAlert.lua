@@ -100,7 +100,13 @@ function CreateAlertFrame(msg, sender)
 	alertText:SetFont("Fonts\\FRIZQT__.TTF", 18, "OUTLINE")
 	alertText:SetWidth(380)  -- Allow wrapping
 
-	alertText:SetText(msg)
+	-- Create a clickable link with "/w sender"
+	local clickableName = "|Hplayer:" .. sender .. "|h|cffffcc00[" .. sender .. "]|r|h"
+
+	-- Full alert message
+	local fullMsg = clickableName .. " " .. msg  
+
+	alertText:SetText(fullMsg)
 	alertFrame:Show()
 	PlaySoundFile("Sound\\Interface\\RaidWarning.wav")
 
